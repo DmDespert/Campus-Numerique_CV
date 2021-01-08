@@ -1,6 +1,7 @@
 <?php
     $title = '';
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 

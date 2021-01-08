@@ -1,4 +1,7 @@
-<?php require('./header.php')?>
+<?php
+    require('header.php');
+    $title = 'D.Despert - Contact';
+?>
 
 <main>
     <section>

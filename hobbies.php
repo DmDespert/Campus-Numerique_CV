@@ -1,6 +1,6 @@
 
 <?php
-    require('./header.php');
+    require('header.php');
     $title = 'D.Despert - Hobbies';
 ?>
 

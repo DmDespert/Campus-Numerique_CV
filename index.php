@@ -1,7 +1,7 @@
 
 <?php
-    require('./header.php');
-    $title = 'blablabla';
+    require('header.php');
+    $title = 'D.Despert - Accueil';
 ?>
 
 <main>
