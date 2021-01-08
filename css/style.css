@@ -1,0 +1,288 @@
+/*---BASICS STYLES---*/
+
+body {
+    position: absolute;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3EFF5;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: #b3ff00;
+}
+
+/*---MAINS COLORS THEMES---*/
+
+.maincolor {
+    color: #72B01D;
+}
+
+.secondcolor {
+    color: #454955;
+}
+
+
+/*---HEADER STYLES---*/
+
+header {
+    padding: 0 5% 1% 5%;
+    background-image: url('../img/backgroundblack.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+header p {
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+}
+
+nav {
+    text-align: right;
+}
+
+nav>ul>li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    text-transform: uppercase;
+}
+
+.photodeMwa {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: 6.5%;
+    top: 60px;
+    background-image: url('../img/photoMWA.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.title {
+    text-align: left;
+}
+
+.title p {
+    text-transform: uppercase;
+}
+
+#name {
+    font-size: 1.4em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#first-title {
+    font-size: 1.2em;
+}
+
+#second-title {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #72B01D;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1em;
+}
+
+/*---MAIN STYLES---*/
+
+main {
+    margin: auto;
+}
+
+section {
+    display: flex;
+    padding: 5%;
+}
+
+table {
+    max-width: 100%;
+}
+
+td {
+    padding: 5px;
+    text-align: justify;
+}
+
+table a {
+    color: #72B01D;
+}
+
+table td:nth-child(3) {
+    text-align: right;
+}
+
+table td:nth-child(2) {
+    text-align: right;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    padding: 20px;
+    margin: 0;
+}
+
+/*---MAIN PAGE---*/
+
+#bottom-space {
+    padding-bottom: 20px;
+}
+
+.rightblockinmain ul li {
+    list-style-type: none;
+}
+
+.leftblockinmain {
+    position: relative;
+    width: 80%;
+    left: 0;
+    margin: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.leftblockinmain>p {
+    padding: 0;
+    text-align: justify;
+}
+
+.rightblockinmain {
+    position: relative;
+    width: 20%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 20px 40px 20px 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,255,255,0) 0%, rgba(208,208,208,1) 58%);
+    text-align: right;
+    border-right: 5px #9a9a9b solid;
+}
+
+#formations {
+    position: relative;
+    padding: 20px;
+}
+
+#formations li {
+    padding: 15px 0;
+    list-style-type: none;
+    text-align: justify;
+}
+
+#formations img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+#background-fixed {
+    background-image: url('../img/backgroundblack.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+
+/*---HOBBIES PAgE---*/
+.description {
+    text-align: justify;
+}
+
+.description>ul>li {
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.description>h2 {
+    padding: 0 20px;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+/*---FORMULAIRE---*/
+
+form {
+    margin: 0 auto;
+}
+
+input {
+    cursor: pointer;
+}
+
+#vandam {
+    cursor: not-allowed;
+}
+
+#email {
+    min-height: 30px;
+    min-width: 415px;
+}
+
+.btn {
+    border: 1px solid #0D0A0B;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+#envoi:hover {
+    background-color: #72B01D;
+    transition: all 1s ease;
+}
+
+#annule:hover {
+    background-color: #c22e2e;
+    transition: all 1s ease;
+}
+
+/*---FOOTER---*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #0D0A0B;
+}
+
+.logo {
+    width: 25px;
+}
+
+#btnup {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7em;
+}
+
+#btnup:hover {
+    color: #72B01D;
+}
