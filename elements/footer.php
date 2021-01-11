@@ -1,6 +1,4 @@
-<?php
 
-?>
     <footer class="secondcolor">
         <div class="allright">
             <p>

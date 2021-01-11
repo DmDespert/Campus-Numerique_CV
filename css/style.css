@@ -103,6 +103,7 @@ main {
 section {
     display: flex;
     padding: 5%;
+    min-height: 300px;
 }
 
 table {
