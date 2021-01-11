@@ -3,7 +3,7 @@
     $metaDescription = 'Contactez directement Dimitri Despert. Si vous avez 
                         des questions, un formulaire est mis à votre disposition';
     $pageTitle = 'ME CONTACTER';
-    require('header.php');
+    require('elements/header.php');
 ?>
 
 <main>
@@ -53,4 +53,4 @@
     </section>
 </main>
 
-<?php require('./footer.php') ?>
+<?php require('elements/footer.php') ?>

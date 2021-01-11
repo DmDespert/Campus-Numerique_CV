@@ -4,7 +4,7 @@
     $metaDescription = 'Ceci est ma page des hobbies, vous y trouverez 
                         mes passions de la vie de tous les jours';
     $pageTitle = 'MES HOBBIES';
-    require('header.php');
+    require('elements/header.php');
 ?>
 
 <main>
@@ -30,4 +30,4 @@
     </section>
 </main>
 
-<?php require('./footer.php') ?>
+<?php require('elements/footer.php') ?>
