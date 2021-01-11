@@ -1,7 +1,9 @@
 
 <?php
+    $metaTitle = 'D.Despert - Accueil';
+    $metaDescription = 'Bienvenue sur mon CV, vous trouverez ici mes références 
+                    professionnelles ainsi que mon parcours et mes expériences';
     require('header.php');
-    $title = 'D.Despert - Accueil';
 ?>
 
 <main>

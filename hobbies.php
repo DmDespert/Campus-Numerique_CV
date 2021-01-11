@@ -1,7 +1,8 @@
 
 <?php
+    $metaTitle = 'D.Despert - Hobbies';
+    $metaDescription = 'Ceci est ma page des hobbies, vous y trouverez mes passions de la vie de tous les jours';
     require('header.php');
-    $title = 'D.Despert - Hobbies';
 ?>
 
 <main>
@@ -21,7 +22,7 @@
                 <li><i class="fa fa-picture-o" aria-hidden="true"></i> Dessin</li>
             </ul>
         </div>
-        <iframe width="820" height="576" src="https://www.youtube.com/embed/9lTxLvunRrE" frameborder="0"
+        <iframe width="820" height="576" src="https://www.youtube.com/embed/9lTxLvunRrE"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </section>
