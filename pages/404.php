@@ -1,6 +1,5 @@
 
 <?php
-    header("refresh:2; url=index.php?pages=accueil");
     require('elements/header.php');
 ?>
 

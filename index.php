@@ -39,7 +39,7 @@
             require $page404;
         }
     } else {
-        header("refresh:0; url=index.php?pages=accueil");
+        header("Location: /index.php?pages=accueil",TRUE,301);
     }
 
 
