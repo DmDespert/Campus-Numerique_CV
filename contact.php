@@ -1,7 +1,8 @@
 <?php
-    $metaTitle = 'D.Despert - Contact';
+    $metaTitle = 'Contact - D.Despert';
     $metaDescription = 'Contactez directement Dimitri Despert. Si vous avez 
-                    des questions, un formulaire est mis à votre disposition';
+                        des questions, un formulaire est mis à votre disposition';
+    $pageTitle = 'ME CONTACTER';
     require('header.php');
 ?>
 
