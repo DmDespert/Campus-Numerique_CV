@@ -2,43 +2,43 @@
 
 <main>
     <section>
-        <form action="https://httpbin.org/post" method="POST">
+        <form action="contacts/contacts.php" method="POST">
             <h2 class="maincolor">
-                PRENDRE LE CONTACT DE LE MOI PAR LE TURFU
+                Formulaire de contact dans le futur du présent
             </h2>
+            <p>
+                Civilité :
+                <br>
+                <input type="radio" name="genre" id="mr" value="Monsieur">
+                <label for="mr">M.</label>
+                <br>
+                <input type="radio" name="genre" id="mme" value="Madame">
+                <label for="mme">Mme</label>
+            </p>
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom">
+            </p>
             <p>
                 <label for="email">Renseignez votre email :</label>
                 <br>
-                <input name="email" type="email" id="email" placeholder="Pour recevoir des spams" required>
+                <input name="email" type="email" id="email" placeholder="Pour recevoir des spams">
             </p>
             <p>
-                Dites moi si vous &ecirc;tes plut&ocirc;t :
+                Raison de votre prise de contact :
                 <br>
-                <input type="checkbox" name="bananeplantain" id="poney">
-                <label for="poney">Une banane plantain en manque d'aventure</label>
+                <input type="radio" name="raison" id="info-presta" value="information-prestation">
+                <label for="info-presta">Demande d'information et prestations</label>
                 <br>
-                <input type="checkbox" name="dora" id="dora">
-                <label for="dora">Dora l'exploracuisse de poulet</label>
-                <br>
-                <input type="checkbox" name="dorade" id="dorade">
-                <label for="dorade">Une dorade aux vermicelles</label>
-                <br>
-                <input type="checkbox" name="vandam" id="vandam" required>
-                <label for="vandam">Une tartine de Jean-Claude Van Damme</label>
-            </p>
-            <p>
-                Ce formulaire est compl&egrave;tement d&eacute;bile :
-                <br>
-                <label for="choix1">OUI</label>
-                <input type="radio" name="choix1" id="choix1">
-                <br>
-                <label for="choix2">OUI</label>
-                <input type="radio" name="choix1" id="choix2">
+                <input type="radio" name="raison" id="emploi" value="demande-emploi">
+                <label for="emploi">Proposition d'emploi</label>
             </p>
             <p>
                 <label for="demande" class="champ">Votre demande :</label>
                 <br>
-                <textarea name="textarea" id="demande" cols="50" rows="10" placeholder="Dites ce que vous voulez, je lirais pas" required></textarea>
+                <textarea name="textarea" id="demande" cols="50" rows="10" placeholder="Dites ce que vous voulez, je lirais pas"></textarea>
                 <br>
                 <input class="btn" id="annule" type="reset" value="NAN C'EST NUL">
                 <input class="btn" id="envoi" type="submit" value="NIQUEL DROME">
