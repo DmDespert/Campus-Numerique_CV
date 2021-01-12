@@ -15,12 +15,19 @@
     //Récupération du textarea
     $demande = filter_input(INPUT_POST, 'textarea', FILTER_SANITIZE_STRING);
 
-    $rangementFormulaire = [$civilite, $nom, $prenom, $email, $raisonContact, $demande];
+    //On range les champs du formulaire dans un tableau
+    $rangementFormulaire = [
+        $civilite,
+        $nom,
+        $prenom,
+        $email,
+        $raisonContact,
+        $demande
+    ];
 
     //Fonction qui test chacuns champs du tableau
     function testTableau($tableau) {
         $i = 0;
-        $zoneDeTest = "";
         while ($i < count($tableau)) {
             $zoneDeTest = $tableau[$i];
             if (strlen($zoneDeTest) === 0) {
@@ -50,6 +57,10 @@
 
         //On referme le fichier texte
         fclose($fichierContact);
+
+        echo "Votre demande a bien été envoyée.";
     }
+
 ?>
 
+<meta http-equiv="refresh" content="3; URL=/index.php?pages=contact">
