@@ -1,8 +1,8 @@
 Nouveau contact :
 Civilité : Monsieur
 Nom : Jean
-Prénom : Micheng
-Email : jeanmicheng@herocorp.fr
+Prénom : Greno
+Email : jeangreno@gmail.com
 Raison du contact : information-prestation
 Demande : Je suis une saucisse
 

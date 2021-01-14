@@ -1,8 +1,0 @@
-Nouveau contact :
-Civilité : Monsieur
-Nom : des
-Prénom : dim
-Email : des.dim@gmail.com
-Raison du contact : information-prestation
-Demande : testeleu
-
