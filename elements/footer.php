@@ -9,6 +9,11 @@
                 <a href="https://www.instagram.com/"><img src="img/logotwitter.jpg" alt="instagram" class="logo"></a>
                 <a href="https://twitter.com/"><img src="img/logoinsta.jpeg" alt="twitter" class="logo"></a>
             </p>
+            <p>
+                La date de votre premère visite est <?= $dateFirstVisit ?>.
+                <br>
+                Vous avez vu <?= $countViewPage ?> pages.
+            </p>
         </div>
     </footer>
 </body>

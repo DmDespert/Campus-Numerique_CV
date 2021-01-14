@@ -5,6 +5,21 @@
 // Restez sur une structure de IF / ELSEIF / ELSE.
 // $pages_url = filter_input(INPUT_GET, 'pages', FILTER_SANITIZE_ENCODED);
 
+    session_start();
+
+    $dateFirstVisit = $_SESSION['date'];
+    $countViewPage = $_SESSION['pagesVues'];
+
+    if(empty($_COOKIE['PHPSESSID'])) {
+        $_SESSION['date'] = date("Y-m-d H:i:s", $timestamp = null);
+    }
+    if (!isset($_SESSION['pagesVues'])) {
+        $_SESSION['pagesVues'] = 1;
+    }
+    else {
+        $_SESSION['pagesVues'] ++;
+    }
+
     $accueil = 'pages/accueil.php';
     $hobbies = 'pages/hobbies.php';
     $contact = 'pages/contact.php';
@@ -42,6 +57,7 @@
         header("Location: /index.php?pages=accueil",TRUE,301);
     }
 
+    unset($_SESSION);
 
 
 
