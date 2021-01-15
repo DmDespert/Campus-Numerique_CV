@@ -1,9 +1,4 @@
 <?php
-// Front-Controler
-// FILTER_VALIDATE_URL
-// INPUT_GET
-// Restez sur une structure de IF / ELSEIF / ELSE.
-// $pages_url = filter_input(INPUT_GET, 'pages', FILTER_SANITIZE_ENCODED);
 
     session_start();
 
@@ -25,23 +20,48 @@
         'accueil' => 'pages/accueil.php',
         'hobbies' => 'pages/hobbies.php',
         'contact' => 'pages/contact.php',
-        'page404' => 'pages/404.php'
+    ];
+
+    $pagesMetaTitles = [
+        'accueil' => $metaTitle = 'Accueil - D.Despert',
+        'hobbies' => $metaTitle = 'Hobbies - D.Despert',
+        'contact' => $metaTitle = 'Contact - D.Despert'
+    ];
+
+    $pagesMetaDescriptions = [
+        'accueil' => $metaDescription = 'Bienvenue sur mon CV, vous trouverez ici mes références professionnelles ainsi que mon parcours et mes expériences',
+        'hobbies' => $metaDescription = 'Ceci est ma page des hobbies, vous y trouverez mes passions de la vie de tous les jours',
+        'contact' => $metaDescription = 'Contactez directement Dimitri Despert. Si vous avez des questions, un formulaire est mis à votre disposition'
+    ];
+
+    $pagesTitles = [
+        'accueil' => $pageTitle = 'D&Eacute;veloppeur web<br>front-end & back-end',
+        'hobbies' => $pageTitle = 'MES HOBBIES',
+        'contact' => $pageTitle = 'ME CONTACTER'
     ];
 
     if ($urlIssetTest === true) {
         if (array_key_exists($url, $route)) {
-            require $route[$url];
+            $isRoad = $route[$url];
         } else {
-            require 'pages/404.php';
+            $isRoad = 'pages/404.php';
         }
-
     } else {
         header("Location: /index.php?pages=accueil",TRUE,301);
     }
 
+    ob_start();
+    require('elements/header.php');
+    require $isRoad;
+    require('elements/footer.php');
+    $render = ob_get_contents();
+    ob_end_clean();
+
+    echo $render;
+
     unset($_SESSION);
 
-
+?>
 
 
 

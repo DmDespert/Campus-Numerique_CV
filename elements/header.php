@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $metaTitle ?></title>
-    <meta name="description" content="<?php echo $metaDescription?>"/>
+    <title><?php echo $pagesMetaTitles[$url] ?></title>
+    <meta name="description" content="<?php echo $pagesMetaDescriptions[$url] ?>"/>
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +21,7 @@
         <div class="photodeMwa"></div>
         <div class="title">
             <p id="first-title">CONCEPTION ET R&Eacute;ALISATION DE SITES INTERNETS,<br>APPLICATIONS WEB & MOBILE</p>
-            <p id="second-title"><?php echo $pageTitle ?></p>
+            <p id="second-title"><?php echo $pagesTitles[$url] ?></p>
             <p id="region">VALENCE, MONT&Eacute;LIMAR ET SA R&Eacute;GION</p>
         </div>
         <nav>

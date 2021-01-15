@@ -1,25 +1,12 @@
 <?php
-    $metaTitle = 'Contact - D.Despert';
-    $metaDescription = 'Contactez directement Dimitri Despert. Si vous avez 
-                            des questions, un formulaire est mis à votre disposition';
-    $pageTitle = 'ME CONTACTER';
-    require('elements/header.php');
 
-    //Récupération de la valeur des radios
+    //Récupération des variables en POST
     $champCivilite = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
-
-    //Récupération du nom et prénom
-    $champNom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_STRING);
-    $champPrenom = filter_input(INPUT_POST, 'prenom', FILTER_SANITIZE_STRING);
-
-    //Récupération email - FILTER_VALIDATE_EMAIL validation et FILTER_SANITIZE_EMAIL assainie email
-    $champEmail = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-
-    //Récupération de la raison du contact
+    $champNom = trim(filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_STRING));
+    $champPrenom = trim(filter_input(INPUT_POST, 'prenom', FILTER_SANITIZE_STRING));
+    $champEmail = trim(filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL));
     $champRaison = filter_input(INPUT_POST, 'raison', FILTER_SANITIZE_STRING);
-
-    //Récupération du textarea
-    $demande = filter_input(INPUT_POST, 'textarea', FILTER_SANITIZE_STRING);
+    $demande = trim(filter_input(INPUT_POST, 'textarea', FILTER_SANITIZE_STRING));
 
     //On réinitialise le status des variables qui un message pour les champs manquants.
     $errorCivilite = null;
@@ -148,5 +135,3 @@
         </form>
     </section>
 </main>
-
-<?php require('elements/footer.php') ?>

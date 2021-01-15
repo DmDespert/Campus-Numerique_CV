@@ -1,12 +1,3 @@
-
-<?php
-    $metaTitle = 'Accueil - D.Despert';
-    $metaDescription = 'Bienvenue sur mon CV, vous trouverez ici mes références 
-                        professionnelles ainsi que mon parcours et mes expériences';
-    $pageTitle = 'D&Eacute;veloppeur web<br>front-end & back-end';
-    require('elements/header.php');
-?>
-
 <main>
     <section>
         <div class="leftblockinmain">
@@ -154,5 +145,3 @@
         </div>
     </section>
 </main>
-
-<?php require('elements/footer.php') ?>
