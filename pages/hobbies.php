@@ -1,5 +1,11 @@
 
-<?php require('elements/header.php'); ?>
+<?php
+    $metaTitle = 'Hobbies - D.Despert';
+    $metaDescription = 'Ceci est ma page des hobbies, vous y trouverez 
+                            mes passions de la vie de tous les jours';
+    $pageTitle = 'MES HOBBIES';
+    require('elements/header.php');
+?>
 
 <main>
     <section>

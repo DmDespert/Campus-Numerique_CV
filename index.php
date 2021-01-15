@@ -7,52 +7,34 @@
 
     session_start();
 
-    $dateFirstVisit = $_SESSION['date'];
-    $countViewPage = $_SESSION['pagesVues'];
-
-    if(empty($_COOKIE['PHPSESSID'])) {
+    if (!isset($_SESSION['pagesVues']) && ($_COOKIE['PHPSESSID'])) {
         $_SESSION['date'] = date("Y-m-d H:i:s", $timestamp = null);
-    }
-    if (!isset($_SESSION['pagesVues'])) {
         $_SESSION['pagesVues'] = 1;
     }
     else {
         $_SESSION['pagesVues'] ++;
     }
 
-    $accueil = 'pages/accueil.php';
-    $hobbies = 'pages/hobbies.php';
-    $contact = 'pages/contact.php';
-    $page404 = 'pages/404.php';
+    $dateFirstVisit = $_SESSION['date'];
+    $countViewPage = $_SESSION['pagesVues'];
 
     $url = filter_input(INPUT_GET, 'pages', FILTER_SANITIZE_ENCODED);
     $urlIssetTest = isset($url);
 
+    $route = [
+        'accueil' => 'pages/accueil.php',
+        'hobbies' => 'pages/hobbies.php',
+        'contact' => 'pages/contact.php',
+        'page404' => 'pages/404.php'
+    ];
+
     if ($urlIssetTest === true) {
-        if ($url === 'accueil') {
-            $metaTitle = 'Accueil - D.Despert';
-            $metaDescription = 'Bienvenue sur mon CV, vous trouverez ici mes références 
-                        professionnelles ainsi que mon parcours et mes expériences';
-            $pageTitle = 'D&Eacute;veloppeur web<br>front-end & back-end';
-            require $accueil;
-        } else if ($url === 'hobbies') {
-            $metaTitle = 'Hobbies - D.Despert';
-            $metaDescription = 'Ceci est ma page des hobbies, vous y trouverez 
-                        mes passions de la vie de tous les jours';
-            $pageTitle = 'MES HOBBIES';
-            require $hobbies;
-        } else if ($url === 'contact') {
-            $metaTitle = 'Contact - D.Despert';
-            $metaDescription = 'Contactez directement Dimitri Despert. Si vous avez 
-                        des questions, un formulaire est mis à votre disposition';
-            $pageTitle = 'ME CONTACTER';
-            require $contact;
+        if (array_key_exists($url, $route)) {
+            require $route[$url];
         } else {
-            $metaTitle = '404 - D.Despert';
-            $metaDescription = "Page d'erreur du site internet";
-            $pageTitle = '404 ERROR';
-            require $page404;
+            require 'pages/404.php';
         }
+
     } else {
         header("Location: /index.php?pages=accueil",TRUE,301);
     }

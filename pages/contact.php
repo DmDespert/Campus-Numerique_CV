@@ -1,4 +1,9 @@
-<?php require('elements/header.php');
+<?php
+    $metaTitle = 'Contact - D.Despert';
+    $metaDescription = 'Contactez directement Dimitri Despert. Si vous avez 
+                            des questions, un formulaire est mis à votre disposition';
+    $pageTitle = 'ME CONTACTER';
+    require('elements/header.php');
 
     //Récupération de la valeur des radios
     $champCivilite = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
