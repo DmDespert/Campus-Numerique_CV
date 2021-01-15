@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+ul {
+    list-style: none;
+}
+
 a:hover {
     color: #b3ff00;
 }
@@ -53,32 +57,6 @@ nav {
 nav>ul>li {
     display: inline;
     padding: 0 20px 0 20px;
-    text-transform: uppercase;
-}
-
-.photodeMwa {
-    position: absolute;
-    width: 130px;
-    height: 130px;
-    right: 6.5%;
-    top: 60px;
-    background-image: url('../img/photoMWA.jpg');
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-}
-
-.title {
-    text-align: left;
-}
-
-.title p {
-    text-transform: uppercase;
-}
-
-#name {
-    font-size: 1.4em;
-    text-align: right;
     text-transform: uppercase;
 }
 
@@ -130,11 +108,6 @@ table td:nth-child(2) {
 h2 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-}
-
-p {
-    padding: 20px;
-    margin: 0;
 }
 
 /*---MAIN PAGE---*/
@@ -232,10 +205,6 @@ form {
     margin: 0 auto;
 }
 
-input {
-    cursor: pointer;
-}
-
 #vandam {
     cursor: not-allowed;
 }
@@ -265,33 +234,18 @@ input {
 /*---FOOTER---*/
 
 footer {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
     background-color: #0D0A0B;
 }
 
-.logo {
-    width: 25px;
+footer ul {
+    padding: 0px;
 }
 
-#btnup {
-    color: grey;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    font-size: 0.7em;
+footer ul li i {
+    width: 20px;
+    height: 17px;
 }
 
-#btnup:hover {
-    color: #72B01D;
-}
-
-errorColor {
-    color: #ff0000;
-}
-
-error {
-    color: red;
+footer a i {
+    padding: 0 3px 0 3px;
 }
